@@ -3,14 +3,14 @@ import Dad from './FamilyTree/Dad';
 import Uncle from './FamilyTree/Uncle';
 import Aunt from './FamilyTree/Aunt';
 
-const Grandpa = () => {
+const Grandpa = ({asset}) => {
     return (
         <div>
             <h3>Grandpa</h3>
             <section className='flex'>
-            <Dad></Dad>
+            <Dad asset={asset}></Dad>
              <Uncle></Uncle>
-             <Aunt></Aunt>
+             <Aunt asset={asset}></Aunt>
             </section>
         </div>
     );
